@@ -2,10 +2,16 @@ function removeAds() {
     document.querySelector('.adv').remove();
 }
 
+/**
+ * @param {String} title
+ */
 function setTitle(title) {
     document.getElementById('title').innerText = title;
 }
 
+/**
+ * @param {String} imageUrl
+ */
 function changeBackgroundImage(imageUrl) {
     document.body.style.backgroundImage = `url("${imageUrl}")`;
 }
@@ -16,6 +22,9 @@ function askUser() {
     document.getElementById('prompt').innerText = userAnswer;
 }
 
+/**
+ * @param {String} itemText
+ */
 function addMenuItem(itemText) {
     const newMenuItemElement = document.createElement('li');
 
